@@ -48,7 +48,7 @@ class ItemCellTests: XCTestCase {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell") as! ItemCell
         let toDoItem = ToDoItem(title: "First", itemDescription: nil, timestamp: 1456150025, location: Location(name: "Home"))
         cell.configCellWithItem(toDoItem, checked: true)
-        let attributeString = NSAttributedString(string: "First", attributes: [NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue])
+        let attributeString = NSAttributedString(string: "First", attributes: [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue])
         XCTAssertEqual(cell.titleLabel.attributedText, attributeString)
         XCTAssertNil(cell.locationLabel.text)
         XCTAssertNil(cell.dateLabel.text)

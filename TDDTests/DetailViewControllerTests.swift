@@ -42,7 +42,7 @@ class DetailViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.dateLabel.text, "02/22/2016")
         XCTAssertEqual(sut.locationLabel.text, "Home")
         XCTAssertEqual(sut.descriptionLabel.text, "The Description")
-        XCTAssertEqualWithAccuracy(sut.mapView.centerCoordinate.latitude, coordinate.latitude, accuracy: 0.001)
+        XCTAssertEqual(sut.mapView.centerCoordinate.latitude, coordinate.latitude, accuracy: 0.001)
     }
 
     func testCheckItem_ChecksItemInItemManager() {

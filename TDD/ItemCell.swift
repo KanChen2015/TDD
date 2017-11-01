@@ -26,7 +26,7 @@ class ItemCell: UITableViewCell {
     func configCellWithItem(_ item: ToDoItem, checked: Bool = false) {
         if checked {
             let attributeString = NSAttributedString(string: item.title, attributes: [
-                NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue
+                NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue
                 ])
             titleLabel.attributedText = attributeString
             locationLabel.text = nil
