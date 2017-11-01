@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import DZNEmptyDataSet
 
-class ItemListViewController: UIViewController {
+class ItemListViewController: UIViewController, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var dataProvider: (UITableViewDataSource & UITableViewDelegate)?
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataProvider
         tableView.delegate = dataProvider
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
     }
 }
