@@ -8,6 +8,7 @@
 
 import UIKit
 import DZNEmptyDataSet
+import DRCKit
 
 class ItemListViewController: UIViewController, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     @IBOutlet var tableView: UITableView!
@@ -18,5 +19,7 @@ class ItemListViewController: UIViewController, DZNEmptyDataSetSource, DZNEmptyD
         tableView.delegate = dataProvider
         tableView.emptyDataSetSource = self
         tableView.emptyDataSetDelegate = self
+
+        let drButton = DRCButtonBlue()
     }
 }

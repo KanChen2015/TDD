@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0404BDC41FAA59DD002D4EE9 /* DRCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0404BDC31FAA58F1002D4EE9 /* DRCKit.framework */; };
+		0404BDC51FAA59DD002D4EE9 /* DRCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0404BDC31FAA58F1002D4EE9 /* DRCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0EFACE212C46393410E1320A /* Pods_TDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7927888B5A015572F66D6D8 /* Pods_TDD.framework */; };
 		3E14757B1D2F2D8300EDAF3F /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E14757A1D2F2D8300EDAF3F /* APIClientTests.swift */; };
 		3E14757D1D2F2E2700EDAF3F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E14757C1D2F2E2700EDAF3F /* APIClient.swift */; };
@@ -34,6 +36,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0404BDC21FAA58F1002D4EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0404BDBE1FAA58F1002D4EE9 /* DRKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9424E3311AE98779006D14C2;
+			remoteInfo = DRCKit;
+		};
+		0404BDC61FAA59DD002D4EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0404BDBE1FAA58F1002D4EE9 /* DRKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9424E3301AE98779006D14C2;
+			remoteInfo = DRCKit;
+		};
 		3EBBFECD1D2DBA1C00603C97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3EBBFEB01D2DBA1C00603C97 /* Project object */;
@@ -43,7 +59,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0404BDC81FAA59DD002D4EE9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0404BDC51FAA59DD002D4EE9 /* DRCKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0404BDBE1FAA58F1002D4EE9 /* DRKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DRKit.xcodeproj; path = "sub-project/DRKit/DRKit/DRKit.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		059DA6EE2E4A2ABD6922607D /* Pods-TDDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDTests/Pods-TDDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C15DA4F884B2099557924BC /* Pods_TDDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E14757A1D2F2D8300EDAF3F /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
@@ -83,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0404BDC41FAA59DD002D4EE9 /* DRCKit.framework in Frameworks */,
 				3EBBFF091D2F067200603C97 /* MapKit.framework in Frameworks */,
 				0EFACE212C46393410E1320A /* Pods_TDD.framework in Frameworks */,
 			);
@@ -99,6 +131,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0404BDBD1FAA58D9002D4EE9 /* sub-project */ = {
+			isa = PBXGroup;
+			children = (
+				0404BDBE1FAA58F1002D4EE9 /* DRKit.xcodeproj */,
+			);
+			name = "sub-project";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0404BDBF1FAA58F1002D4EE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0404BDC31FAA58F1002D4EE9 /* DRCKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1D4CEBB3FD887F1D4C100099 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +162,7 @@
 		3EBBFEAF1D2DBA1C00603C97 = {
 			isa = PBXGroup;
 			children = (
+				0404BDBD1FAA58D9002D4EE9 /* sub-project */,
 				3EBBFF081D2F067200603C97 /* MapKit.framework */,
 				3EBBFEBA1D2DBA1C00603C97 /* TDD */,
 				3EBBFECF1D2DBA1C00603C97 /* TDDTests */,
@@ -214,10 +264,12 @@
 				3EBBFEB61D2DBA1C00603C97 /* Resources */,
 				D0B0D3A8EEC64D1BAD3B8D37 /* [CP] Embed Pods Frameworks */,
 				3BD708540A1E11F5C98E7286 /* [CP] Copy Pods Resources */,
+				0404BDC81FAA59DD002D4EE9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0404BDC71FAA59DD002D4EE9 /* PBXTargetDependency */,
 			);
 			name = TDD;
 			productName = TDD;
@@ -282,6 +334,12 @@
 			mainGroup = 3EBBFEAF1D2DBA1C00603C97;
 			productRefGroup = 3EBBFEB91D2DBA1C00603C97 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0404BDBF1FAA58F1002D4EE9 /* Products */;
+					ProjectRef = 0404BDBE1FAA58F1002D4EE9 /* DRKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3EBBFEB71D2DBA1C00603C97 /* TDD */,
@@ -289,6 +347,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0404BDC31FAA58F1002D4EE9 /* DRCKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DRCKit.framework;
+			remoteRef = 0404BDC21FAA58F1002D4EE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3EBBFEB61D2DBA1C00603C97 /* Resources */ = {
@@ -448,6 +516,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0404BDC71FAA59DD002D4EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DRCKit;
+			targetProxy = 0404BDC61FAA59DD002D4EE9 /* PBXContainerItemProxy */;
+		};
 		3EBBFECE1D2DBA1C00603C97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3EBBFEB71D2DBA1C00603C97 /* TDD */;
@@ -564,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C2B0730FA010080F45C3439 /* Pods-TDD.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TDD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -578,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7419F5A93B5A612339B57757 /* Pods-TDD.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TDD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

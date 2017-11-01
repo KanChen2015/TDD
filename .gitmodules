@@ -1,0 +1,3 @@
+[submodule "sub-project/DRKit"]
+	path = sub-project/DRKit
+	url = git@github.com:drchrono/DRKit.git
