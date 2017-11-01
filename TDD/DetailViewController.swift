@@ -49,6 +49,10 @@ class DetailViewController: UIViewController {
             itemInfo.0.checkItemAtIndex(itemInfo.1)
         }
     }
+
+    func subMethod() {
+        assert(false, "This is a method for testing CI")
+    }
     /*
     // MARK: - Navigation
 
