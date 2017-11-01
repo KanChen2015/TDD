@@ -467,10 +467,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TDD/Pods-TDD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DRCSelectionKit/DRCSelectionKit.framework",
+				"${BUILT_PRODUCTS_DIR}/DRInjection/DRInjection.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DRCSelectionKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DRInjection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@
 import UIKit
 import DZNEmptyDataSet
 import DRCKit
+import DRCSelectionKit
 
 class ItemListViewController: UIViewController, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     @IBOutlet var tableView: UITableView!
@@ -21,5 +22,6 @@ class ItemListViewController: UIViewController, DZNEmptyDataSetSource, DZNEmptyD
         tableView.emptyDataSetDelegate = self
 
         let drButton = DRCButtonBlue()
+        let selectionPopover = SelectionPopover()
     }
 }

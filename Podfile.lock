@@ -1,12 +1,18 @@
 PODS:
+  - DRCSelectionKit (2.0.2):
+    - DRInjection (~> 2.0.0)
+  - DRInjection (2.0.0)
   - DZNEmptyDataSet (1.8.1)
 
 DEPENDENCIES:
+  - DRCSelectionKit (~> 2.0.0)
   - DZNEmptyDataSet
 
 SPEC CHECKSUMS:
+  DRCSelectionKit: 8378d8f015e460188b5df01da8a36cde0676f46b
+  DRInjection: c945e8941f6bd619ec75f6952fe7828329d36c4d
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
 
-PODFILE CHECKSUM: eba4f5a956a617e1ada2c8af6fbb856469c688d5
+PODFILE CHECKSUM: 304f25b80ba6174080e13df16b64a7f375eb1b60
 
 COCOAPODS: 1.3.1
